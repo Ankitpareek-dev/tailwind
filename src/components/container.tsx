@@ -9,8 +9,6 @@ export const Container = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("max-w-4xl mx-auto px-4 md:py-8", className)}>
-      {children}
-    </div>
+    <div className={cn("max-w-5xl mx-auto px-4", className)}>{children}</div>
   );
 };

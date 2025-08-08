@@ -3,10 +3,12 @@ import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="layout">
-      <Container className="flex flex-row items-center justify-center">
-        <Navbar></Navbar>
-      </Container>
+    <div className="h-screen bg-blue-50 relative">
+      <div>
+        <Container className=" ">
+          <Navbar></Navbar>
+        </Container>
+      </div>
     </div>
   );
 }
