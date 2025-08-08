@@ -1,30 +1,40 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import React, { lazy } from "react";
+Image;
 
 export const Navbar = () => {
   const links = [
     {
       title: "Guide",
-      href: "#",
+      href: "/Guide",
     },
     {
       title: "Pricing",
-      href: "#",
+      href: "/Pricing",
     },
     {
       title: "Login",
-      href: "#",
+      href: "/Login",
     },
   ];
   return (
-    <div className="navbar-root">
-      <div className="logo">Fintech</div>
-      <div>
-        {links.map((link, idx) => (
-          <a key={link.title} href={link.href}>
-            {link.title}
-          </a>
-        ))}
-      </div>
+    <div className="flex items-center justify-between">
+      <Link href="/">
+        <Image
+          draggable={false}
+          loading="lazy"
+          src="/logo.svg"
+          height={50}
+          width={50}
+          alt="logo"
+        />
+      </Link>
+      {links.map((link, index) => (
+        <Link href={link.href} key={index}>
+          {link.title}
+        </Link>
+      ))}
     </div>
   );
 };

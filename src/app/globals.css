@@ -7,25 +7,3 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-
-.container {
-  max-width: 200px;
-  margin: 0 auto;
-  background-color: red;
-}
-
-.layout {
-  height: 100vh;
-  background-image: linear-gradient(to bottom, white, #dbeafe, white);
-}
-
-.navbar-root {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0px;
-}
-
-.logo {
-  font-size: 8px;
-}
